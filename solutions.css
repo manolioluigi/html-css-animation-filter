@@ -1,0 +1,149 @@
+/* 1 */
+.ex-1-square:hover {
+    transition: 3s;
+    background-color: red;
+}
+/* 2 */
+.ex-2-square:active {
+    transition: 2s;
+    width: 500px;
+}
+/* 3 */
+.ex-3-square:hover {
+    transition: 2s;
+    border-radius: 50%;
+}
+/* 4 */
+.ex-4-square:hover {
+    transition: 2s;
+    opacity: 0;
+}
+/* 5 */
+.ex-5-square:hover {
+    transform: scale(1.5);
+}
+.ex-5-square:active{
+    transform: scale(0.5);
+}
+/* 6 */
+.ex-6-img:hover {
+    filter: grayscale(1);
+}
+/* 7 */
+.ex-7-img:hover {
+    transition: 2s;
+    filter: brightness(.6) blur(2px);
+}
+/* 8 */
+.ex-8-img:hover {
+    filter: saturate(200%) blur(1px);
+    border-radius: 30px;
+}
+/* 9 */
+.ex-9-img:hover{
+    filter: sepia(.3) grayscale(1);
+    border-radius: 30px;
+    transform: scale(0.5);
+}
+/* 10 */
+.ex-10-icon {
+    animation: loading 3s linear infinite;
+}
+@keyframes loading {
+    0%{
+        transform: rotate(360deg);
+    }
+}
+/* 11 */
+.ex-11-icon:hover {
+    animation: loading 3s linear infinite;
+}
+@keyframes loading {
+    0%{
+        transform: rotate(0);
+    }
+    75%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
+}
+/* 12 */
+.ex-12-button .ex-12-bottom-white , .ex-12-top-white {
+    animation: bot 2s linear infinite;
+    animation: top 2s linear infinite;
+}
+@keyframes bot {
+    0% {
+        right: 0%;
+    }
+    50% {
+        right: 100%;
+    }
+    100% {
+        right: 0%;
+    }
+
+}
+@keyframes top {
+    0% {
+        left: 0%;
+    }
+    50% {
+        left: 100%;
+    }
+    100% {
+        left: 0%;
+    }
+
+}
+/* 13 */
+.ex-13-button .ex-13-bottom-white , .ex-13-top-white {
+    animation: bot13 1s linear infinite;
+    animation: top13 1s linear infinite;
+}
+@keyframes bot13 {
+    0%{
+        right: 0px;
+        bottom: 0px;
+    }
+    25%{
+        right: 100%;
+        bottom: 0px;
+    }
+    50%{
+        right: 100%;
+        bottom: 100%;
+    }
+    75%{
+        right: 0px;
+        bottom: 100%;
+    }
+    100%{
+        right: 0px;
+        bottom: 0px;
+    }
+}
+@keyframes top13 {
+    0%{
+        left: 0px;
+        top: 0px;
+    }
+    25%{
+        left: 100%;
+        top: 0px;
+    }
+    50%{
+        left: 100%;
+        top: 100%;
+    }
+    75%{
+        left: 0px;
+        top: 100%;
+    }
+    100%{
+        left: 0px;
+        left: 0px;
+    }
+}
